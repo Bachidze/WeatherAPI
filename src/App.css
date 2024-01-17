@@ -16,34 +16,42 @@ body{
 input{
   width: 200px;
   height: 40px;
-  color: black;
+  color: white;
   font-size: 12px;
   font-family: Roboto;
   font-weight: 400;
   word-wrap: break-word;
   outline: none;
   border: none;
-  border-radius: 30px;
   padding-left: 20px;
+  background: transparent;
+  border-bottom: 1px solid white;
 }
 
 .inp{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 
 .flex{
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 8px;
-  gap: 110px;
+  justify-content: center;
+  gap: 100px;
 }
 
 .main{
   padding: 50px 45px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+   background: rgba(255, 255, 255, 0.04); 
+  border-top: 5px rgba(255, 255, 255, 0.14) solid; 
+  backdrop-filter: blur(8px);
 }
 
 h1{
@@ -58,4 +66,240 @@ p{
   font-size: 14px;
   font-weight: 400;
   word-wrap: break-word
+}
+
+.loop{
+  position: absolute;
+  right:30px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.mainflex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 70px;
+  margin-bottom: 45px;
+}
+
+h2{
+  color: white;
+  font-size: 55px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+h3{
+  color: white;
+  font-size: 30px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.cloud{
+  width: 50px;
+}
+
+.border{
+    width: 100%; 
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04); 
+    border-top: 5px rgba(255, 255, 255, 0.14) solid;
+    backdrop-filter: blur(19px)
+}
+
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -10px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+h5{
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+h6{
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.border2{
+  width: 80%;
+  height: 100%;
+  border-bottom: 1px white solid;
+  margin: 0 auto;
+}
+
+.line{
+  display: flex;
+  gap: 10px;
+}
+.telavi{
+  position: absolute;
+  top: 210px;
+  display: flex;
+  gap: 10px;
+}
+
+.humidity{
+  position: relative;
+  left: -10px;
+}
+.min{
+  position: relative;
+  left: -4px;
+}
+
+.cloudy{
+  position: relative;
+  left: -20px;
+}
+.wind{
+  position: relative;
+  left: -13px;
+}
+
+.line2{
+  position: relative;
+  left: 10px;
+}
+
+.line3{
+  position: relative;
+  left: 20px;
+}
+
+.line4{
+  position: relative;
+  left: 19px;
+}
+
+@media(width >= 768px){
+  body{
+    background-image: url('/assets/bg-weather (1).svg');
+  }
+  h1{
+    font-size: 16px;
+  }
+  p{
+    font-size: 16px;
+  }
+  h2{
+    font-size: 65px;
+  }
+  h3{
+    font-size: 35px;
+  }
+  h5{
+    font-size: 16px;
+  }
+  h6{
+    font-size: 18px;
+  }
+
+  .telavi{
+    top: 220px;
+  }
+
+}
+
+@media (width >= 1440px){
+  body{
+    background-image: url('/assets/bg-weather (2).svg');
+  }
+
+  .main{
+    width: 526px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .border{
+    display: none;
+  }
+
+  input{
+    z-index: 2;
+  }
+  .loop{
+    z-index: 2;
+  }
+
+  .headerimg{
+    width: 90px;
+    margin-left: 137px;
+    margin-top: 37px;
+  }
+
+  input{
+    margin-right: 130px;
+    margin-top: 37px;
+    width: 340px;
+    font-size: 20px;
+  }
+  .loop{
+    right: 160px;
+    top: 60px;
+    width: 25px;
+  }
+
+  .title{
+    position: relative;
+    top: 100px;
+    left: -65px;
+    text-align: left;
+    margin-bottom: 150px;
+  }
+
+  h1{
+    margin-left: -120px;
+    margin-top: 20px;
+  }
+  p{
+    margin-top: 10px;
+  }
+
+  .flex{
+    gap: 195px;
+  }
+  .border2{
+    position: relative;
+    left: -55px;
+    top: -80px;
+    width: 325px;
+  }
+
+  .mainflex{
+    position: absolute;
+    top: 360px;
+    left: 150px;
+  }
+  h2{
+    font-size: 90px;
+  }
+
+  h3{
+    font-size: 50px;
+    position: relative;
+    top: -100px;
+  }
 }
