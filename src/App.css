@@ -299,4 +299,9 @@ h6{
     top: -10px;
     font-size: 18px;
   }
+
+  .cloud{
+    position: relative;
+    top: 30px;
+  }
 }
