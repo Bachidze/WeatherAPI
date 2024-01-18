@@ -28,9 +28,10 @@ input{
   border-bottom: 1px solid white;
 }
 
+
+
 .inp{
   display: flex;
-  justify-content: center;
   justify-content: space-between;
   padding: 20px;
 }
@@ -38,10 +39,18 @@ input{
 
 .flex{
   display: flex;
-  padding: 8px;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: 10px;
 }
+
+ .paragraphimg{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+} 
 
 .main{
   padding: 50px 45px;
@@ -73,6 +82,7 @@ p{
   right:30px;
   top: 35px;
   cursor: pointer;
+  z-index: 3;
 }
 
 .mainflex{
@@ -102,6 +112,10 @@ h3{
 
 .cloud{
   width: 50px;
+}
+button{
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .border{
@@ -147,48 +161,27 @@ h6{
   margin: 0 auto;
 }
 
-.line{
-  display: flex;
-  gap: 10px;
-}
+
+
 .telavi{
   position: absolute;
-  top: 210px;
+  top: 205px;
   display: flex;
   gap: 10px;
 }
 
 .humidity{
   position: relative;
-  left: -10px;
-}
-.min{
-  position: relative;
-  left: -4px;
+  left: -6px;
 }
 
 .cloudy{
   position: relative;
-  left: -20px;
+  left: -9px;
 }
-.wind{
+.windy{
   position: relative;
-  left: -13px;
-}
-
-.line2{
-  position: relative;
-  left: 10px;
-}
-
-.line3{
-  position: relative;
-  left: 20px;
-}
-
-.line4{
-  position: relative;
-  left: 19px;
+  left: -6px;
 }
 
 @media(width >= 768px){
@@ -215,7 +208,12 @@ h6{
   }
 
   .telavi{
-    top: 220px;
+    top: 205px;
+  }
+
+  .main{
+    position: absolute;
+    bottom: 0;
   }
 
 }
@@ -240,10 +238,6 @@ h6{
   input{
     z-index: 2;
   }
-  .loop{
-    z-index: 2;
-  }
-
   .headerimg{
     width: 90px;
     margin-left: 137px;
@@ -270,16 +264,11 @@ h6{
     margin-bottom: 150px;
   }
 
-  h1{
-    margin-left: -120px;
-    margin-top: 20px;
-  }
-  p{
-    margin-top: 10px;
-  }
-
   .flex{
-    gap: 195px;
+    position: relative;
+    left: -55px;
+    gap: 80px;
+    padding:8px;
   }
   .border2{
     position: relative;
