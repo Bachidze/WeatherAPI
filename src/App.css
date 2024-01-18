@@ -90,7 +90,7 @@ p{
   align-items: center;
   justify-content: center;
   gap: 5px;
-  margin-top: 10px;
+  margin-top: 70px;
   margin-bottom: 45px;
 }
 
@@ -161,18 +161,11 @@ h6{
   margin: 0 auto;
 }
 
-.main{
-  position: absolute;
-  bottom: 0;
-}
 
-.border{
-  display: none;
-}
 
 .telavi{
   position: absolute;
-  top: 150px;
+  top: 210px;
   display: flex;
   gap: 10px;
 }
@@ -215,16 +208,7 @@ h6{
   }
 
   .telavi{
-    top: 205px;
-  }
-
-  .main{
-    position: absolute;
-    bottom: 0;
-  }
-
-  .border{
-    display: none;
+    top: 220px;
   }
 
 }
@@ -249,6 +233,7 @@ h6{
   input{
     z-index: 2;
   }
+
   .headerimg{
     width: 90px;
     margin-left: 137px;
