@@ -207,11 +207,18 @@ h6{
     font-size: 18px;
   }
 
+  .border{
+    display: none;
+  }
   .telavi{
     top: 220px;
     position: absolute;
     z-index: 2;
     top: 170px;
+  }
+  .cloud{
+    position: absolute;
+    top: 100px;
   }
 
   .main{
