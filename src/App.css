@@ -161,7 +161,14 @@ h6{
   margin: 0 auto;
 }
 
+.main{
+  position: absolute;
+  bottom: 0;
+}
 
+.border{
+  display: none;
+}
 
 .telavi{
   position: absolute;
@@ -214,6 +221,10 @@ h6{
   .main{
     position: absolute;
     bottom: 0;
+  }
+
+  .border{
+    display: none;
   }
 
 }
