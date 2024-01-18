@@ -209,6 +209,14 @@ h6{
 
   .telavi{
     top: 220px;
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+  }
+
+  .main{
+   position: absolute;
+   bottom: 0;
   }
 
 }
