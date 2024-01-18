@@ -90,7 +90,7 @@ p{
   align-items: center;
   justify-content: center;
   gap: 5px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 45px;
 }
 
@@ -172,7 +172,7 @@ h6{
 
 .telavi{
   position: absolute;
-  top: 180px;
+  top: 150px;
   display: flex;
   gap: 10px;
 }
